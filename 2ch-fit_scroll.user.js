@@ -32,11 +32,15 @@ function hide(){
 
 // directionが真なら下スクロール、偽なら上スクロール
 function scroll(event, direction){
-  var $topNode, topNodeIndex;
+  var $topNode, // 次にページの最上部に表示する<dt>
+      topNodeIndex; // $topNodeの$dtListでのインデックス
 
   // 2ch.scではread.cgiがJavaScriptモードの場合にはレスが#threadに入る
+  // その他の場合にはレスは.threadに入る
   var $dtList = document.querySelectorAll('.thread dt, #thread dt');
   var $ddList = document.querySelectorAll('.thread dd, #thread dd');
+
+  // $topNode, topNodeIndexを決定する
   var rect;
   if(direction){
     for(topNodeIndex = 0; topNodeIndex < $ddList.length; topNodeIndex++){
