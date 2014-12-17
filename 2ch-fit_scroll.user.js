@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name           2ch: Fit Scroll
-// @description    スクロール時にできるだけレスが画面端で見切れないようにする。Spaceで下スクロール、Shift+Spaceで上スクロール。
+// @description    スクロール時にできるだけレスが画面端で切れないようにする。Spaceで下スクロール、Shift+Spaceで上スクロール。
 // @version        0.1
 // @author         vzvu3k6k
 // @match          http://*.2ch.net/test/read.cgi/*
